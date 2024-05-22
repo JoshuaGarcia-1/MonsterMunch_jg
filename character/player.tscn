@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://glryvuf0y8de"]
+
+[ext_resource type="Texture2D" uid="uid://jb4tlomq7w8g" path="res://assets/Frogmonster.png" id="1_3tnel"]
+[ext_resource type="Script" path="res://character/player.gd" id="1_u0mkw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j2uca"]
+radius = 32.0
+height = 82.0
+
+[node name="player" type="CharacterBody2D"]
+position = Vector2(140, 44)
+script = ExtResource("1_u0mkw")
+
+[node name="Frogmonster" type="Sprite2D" parent="."]
+position = Vector2(-136, -70)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_3tnel")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-141, -57)
+shape = SubResource("CapsuleShape2D_j2uca")

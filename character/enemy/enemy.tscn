@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8qviwtf657cy"]
+
+[ext_resource type="Texture2D" uid="uid://cmxd7dpeyyko6" path="res://assets/enemy.png" id="1_8cibi"]
+[ext_resource type="Script" path="res://character/enemy/enemy.gd" id="1_uqvss"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0js00"]
+radius = 28.0
+height = 108.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wse40"]
+radius = 18.0
+height = 36.0
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_uqvss")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(362, 9)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_8cibi")
+
+[node name="body" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(345, 10)
+shape = SubResource("CapsuleShape2D_0js00")
+
+[node name="pitchfork" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(402, -19)
+shape = SubResource("CapsuleShape2D_wse40")

@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://m24g6y6wp5oh"]
 
 [ext_resource type="Script" path="res://menus/win.gd" id="1_4nmfu"]
-[ext_resource type="Texture2D" uid="uid://dbxfbgfja6wci" path="res://assets/MonsterMunchTitleScreen_backdrop-01.png" id="1_l57yd"]
 [ext_resource type="Texture2D" uid="uid://30cvmfainfy7" path="res://assets/logo.png" id="2_q6avt"]
+[ext_resource type="Texture2D" uid="uid://g1cr154xbf3x" path="res://assets/winscreen-01.png" id="2_uryga"]
 [ext_resource type="Texture2D" uid="uid://biapx45wdyjhm" path="res://assets/exit_button.png" id="4_8s13d"]
 
 [node name="Control" type="Control"]
@@ -17,11 +17,11 @@ script = ExtResource("1_4nmfu")
 [node name="background" type="Sprite2D" parent="."]
 position = Vector2(392, 260)
 scale = Vector2(0.175, 0.175)
-texture = ExtResource("1_l57yd")
+texture = ExtResource("2_uryga")
 
 [node name="Logo" type="Sprite2D" parent="."]
-position = Vector2(232, 129)
-scale = Vector2(0.2, 0.2)
+position = Vector2(331, 51)
+scale = Vector2(0.102445, 0.102445)
 texture = ExtResource("2_q6avt")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
